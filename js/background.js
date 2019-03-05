@@ -27,12 +27,12 @@ if (chrome.tabs != undefined) {
           chrome.tabs.query({active: true, currentWindow: true, url: addWildCardsToURL(result.devURLs)}, function(tabs) {
             chrome.tabs.executeScript(
                 tabs[0].id,
-                {code: 'window.onload = document.body.insertAdjacentHTML(\'afterbegin\', \'' + makeIndicator('green') + '\'); console.log(\'' + tab.url + '\');'});
+                {code: 'window.onload = document.body.insertAdjacentHTML(\'afterbegin\', \'' + makeIndicator('green') + '\');'});
           });
           chrome.tabs.query({active: true, currentWindow: true, url: addWildCardsToURL(result.prodURLs)}, function(tabs) {
             chrome.tabs.executeScript(
                 tabs[0].id,
-                {code: 'window.onload = document.body.insertAdjacentHTML(\'afterbegin\', \'' + makeIndicator('not hotdog') + '\'); console.log(\'' + tab.url + '\');'});
+                {code: 'window.onload = document.body.insertAdjacentHTML(\'afterbegin\', \'' + makeIndicator('not hotdog') + '\');'});
           });
         }
       });
