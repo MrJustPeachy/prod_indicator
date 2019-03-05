@@ -1,0 +1,23 @@
+{
+    "name": "Prod indicator",
+    "version": "0.0.0.1",
+    "description": "Visual indicator for when you're on prod vs. when you're on a development server.",
+    "author": "Dillon Pietsch",
+    "permissions": ["storage", "tabs", "http://*/*", "https://*/*"],
+    "options_page": "html/options.html",
+    "content_scripts": [
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["js/background.js"]
+        }
+    ],
+    "browser_action" : {
+        "default_title": "Prod indicator"
+      },
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": false
+    },
+    "manifest_version": 2
+  }
+  

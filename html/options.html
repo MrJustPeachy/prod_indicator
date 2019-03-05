@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Prod indicator</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prod indicator options</h1>
+      <form>
+        <div class="form-group">
+            <label for="dev-urls">Development URL(s):</label>
+            <textarea class="form-control" rows="5" id="dev-urls" placeholder="Seperate URLs by a comma"></textarea>
+          <label for="prod-urls">Production URL(s):</label>
+            <textarea class="form-control" rows="5" id="prod-urls" placeholder="Seperate URLs by a comma"></textarea>
+        </div>
+      </form>
+      <button class="btn" id="url-button" style="background-color: darkgray; font-weight: 500; font-size: 18px; padding: 10px 15px;">Submit</button>
+    </div>
+  </body>
+  <script src="../js/options.js"></script>
+</html>
